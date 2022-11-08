@@ -10,7 +10,7 @@ export default {
 
 export const DefaultDropdown = () => (
   <div>
-    <Dropdown onChange={action('selected')} placeholder="select a framework">
+    <Dropdown onChange={action('choose')} placeholder="select a framework">
       <Dropdown.Option value="spark">Spark</Dropdown.Option>
       <Dropdown.Option value="kafka">Kafka</Dropdown.Option>
       <Dropdown.Option value="flink">Flink</Dropdown.Option>

@@ -29,7 +29,7 @@ const Dialog = ({show, onClose, children}: DialogProps): JSX.Element => {
   } else {
     return (
       <>
-        <div className='dim-back' onClick={handleBackgroundClick} />
+        <div data-testid="dim-back" className='dim-back' onClick={handleBackgroundClick} />
         <div className="main-container">
           <div className="dialog-container">
             {children}

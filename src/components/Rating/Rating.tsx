@@ -5,16 +5,23 @@ import React, {
 import { FiStar } from 'react-icons/fi';
 
 export type RatingSize = 'small' | 'medium' | 'large';
-export type RatingVisual = 'filled' | 'half-filled' | 'empty';
+export type RatingVisual = 'filled' | 'empty';
 export interface IRatingProps {
+  /** set customized style */
   className?: string;
+  /** set disabledness */
   disabled?: boolean;
+  /** set label */
   label?: string;
+  /** set default stars highlighted */
   defaultRating?: number;
+  /** set total amount of stars */
   totalStars?: number;
+  /** set size of stars */
   size?: RatingSize;
+  /** set star fill empty or full */
   starFill?: RatingVisual;
-  rating?: number;
+  // rating?: number;
 }
 
 const Rating: FC<IRatingProps> = ({
@@ -22,7 +29,7 @@ const Rating: FC<IRatingProps> = ({
   disabled = false,
   size = 'medium',
   defaultRating = 2,
-  label=size
+  label = size,
 }) => {
   const [rating, setRating] = useState(defaultRating);
   const [hover, setHover] = useState(0);

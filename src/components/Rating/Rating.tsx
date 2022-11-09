@@ -29,13 +29,13 @@ const Rating: FC<IRatingProps> = ({
   disabled = false,
   size = 'medium',
   defaultRating = 2,
-  label = size,
+  label = 'Example label',
 }) => {
   const [rating, setRating] = useState(defaultRating);
   const [hover, setHover] = useState(0);
   return (
     <>
-      <label>{!label ?  disabled ? 'Disabled' : 'Normal ' + label : label}</label>
+      <label>{!label ? size : label}</label>
       <span className="star-container" data-testid="star-container">
         {[...Array(totalStars)].map((star, i) => {
           const inputValue = i + 1;
@@ -47,7 +47,7 @@ const Rating: FC<IRatingProps> = ({
                 className="star-input"
                 name="rating"
                 value={inputValue}
-                onClick={() => !disabled &&setRating(inputValue)}
+                onClick={() => !disabled && setRating(inputValue)}
               ></input>
               <FiStar
                 className={`star-${size} ${disabled && `star-disabled`}`}

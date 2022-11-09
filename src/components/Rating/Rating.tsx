@@ -25,7 +25,7 @@ export interface IRatingProps {
 }
 
 const Rating: FC<IRatingProps> = ({
-  totalStars = 5,
+  totalStars = 7,
   disabled = false,
   size = 'medium',
   defaultRating = 2,
@@ -59,6 +59,7 @@ const Rating: FC<IRatingProps> = ({
             </label>
           );
         })}
+        {!disabled && <button onClick={()=> !disabled && setRating(0)}>Clear Rating</button>}
       </span>
     </>
   );

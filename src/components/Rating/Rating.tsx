@@ -47,7 +47,7 @@ const Rating: FC<IRatingProps> = ({
                 className="star-input"
                 name="rating"
                 value={inputValue}
-                onClick={() => setRating(inputValue)}
+                onClick={() => !disabled &&setRating(inputValue)}
               ></input>
               <FiStar
                 className={`star-${size} ${disabled && `star-disabled`}`}

@@ -35,7 +35,7 @@ const Rating: FC<IRatingProps> = ({
   const [hover, setHover] = useState(0);
   return (
     <>
-      <label>{disabled ? 'Disabled' : 'Normal ' + label}</label>
+      <label>{!label ?  disabled ? 'Disabled' : 'Normal ' + label : label}</label>
       <span className="star-container" data-testid="star-container">
         {[...Array(totalStars)].map((star, i) => {
           const inputValue = i + 1;

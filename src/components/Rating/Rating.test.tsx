@@ -31,7 +31,7 @@ describe('Rating Component', () => {
       defaultRating:2
     };
     render(<Rating {...ratingProps} />);
-    const rating = screen.queryByText('Disabled') as HTMLElement;
+    const rating = screen.queryByText('Example label') as HTMLElement;
     expect(rating).toBeInTheDocument();
     const starInput = screen.getAllByRole('radio');
     fireEvent.click(starInput[3]);

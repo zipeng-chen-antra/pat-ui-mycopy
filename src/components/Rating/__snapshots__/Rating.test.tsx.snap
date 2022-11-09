@@ -3,7 +3,7 @@
 exports[`Rating Component should render default Rating component 1`] = `
 <DocumentFragment>
   <label>
-    Normal medium
+    Example label
   </label>
   <span
     class="star-container"
@@ -154,6 +154,67 @@ exports[`Rating Component should render default Rating component 1`] = `
         />
       </svg>
     </label>
+    <label
+      class="star-label"
+    >
+      <input
+        class="star-input"
+        data-testid="star-input-6"
+        name="rating"
+        type="radio"
+        value="6"
+      />
+      <svg
+        class="star-medium false"
+        color="grey"
+        fill="none"
+        height="medium"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        style="color: grey;"
+        viewBox="0 0 24 24"
+        width="medium"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+        />
+      </svg>
+    </label>
+    <label
+      class="star-label"
+    >
+      <input
+        class="star-input"
+        data-testid="star-input-7"
+        name="rating"
+        type="radio"
+        value="7"
+      />
+      <svg
+        class="star-medium false"
+        color="grey"
+        fill="none"
+        height="medium"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        style="color: grey;"
+        viewBox="0 0 24 24"
+        width="medium"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+        />
+      </svg>
+    </label>
+    <button>
+      Clear Rating
+    </button>
   </span>
 </DocumentFragment>
 `;

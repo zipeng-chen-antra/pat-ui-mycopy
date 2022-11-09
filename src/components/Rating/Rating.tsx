@@ -1,9 +1,5 @@
 import React, {
   FC,
-  FunctionComponent,
-  MouseEvent,
-  ReactNode,
-  useEffect,
   useState,
 } from 'react';
 import { FiStar } from 'react-icons/fi';
@@ -19,7 +15,6 @@ export interface IRatingProps {
   size?: RatingSize;
   starFill?: RatingVisual;
   rating?: number;
-  // onClick?: () => void;
 }
 
 const Rating: FC<IRatingProps> = ({
@@ -48,7 +43,6 @@ const Rating: FC<IRatingProps> = ({
                 onClick={() => setRating(inputValue)}
               ></input>
               <FiStar
-                // title="star"
                 className={`star-${size} ${disabled && `star-disabled`}`}
                 color={inputValue <= (hover || rating) ? 'yellow' : 'grey'}
                 size={size}

@@ -29,7 +29,6 @@ describe('Rating Component', () => {
       disabled: true,
       totalStars: 5,
     };
-    const  container = render(<Rating />);
     render(<Rating {...ratingProps} />);
     const rating = screen.queryByText('Disabled') as HTMLElement;
     expect(rating).toBeInTheDocument();
@@ -43,7 +42,6 @@ describe('Rating Component', () => {
       totalStars: 8,
     };
     render(<Rating {...ratingProps} />);
-    // const totalStars = await screen.findAllByText('Normal medium');
     const element = await screen.getByTestId('star-container');
     expect(element.querySelectorAll('label')).toHaveLength(8);
   });

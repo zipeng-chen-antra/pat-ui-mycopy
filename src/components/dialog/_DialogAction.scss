@@ -1,0 +1,34 @@
+.dialog-action {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 8px;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+
+  button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    color: #1976d2;
+  }
+
+  button:hover {
+    background-color: #b8d1ea;
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,26 @@
+.star-input{
+    visibility:hidden;
+}
+
+.star{
+
+    &-small{
+        width: 30px;
+    }
+    &-medium{
+        width: 50px;
+    }
+    &-large{
+        width: 70px;
+    }
+    &-disabled{
+        cursor: not-allowed;
+        color:gray;
+        opacity: .3;
+    }
+}
+
+
+.star-container{
+    display: flex;
+}
